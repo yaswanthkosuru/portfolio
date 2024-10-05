@@ -1,6 +1,6 @@
 import { BackgroundBoxesDemo } from "@components/Hero";
 import { BoxesCore } from "@components/ui/background-boxes";
-export const navItems = [
+const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
