@@ -8,13 +8,21 @@
     "start": "next start"
   },
   "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.9.0",
+    "@react-three/fiber": "^8.17.9",
+    "@tabler/icons-react": "^3.19.0",
+    "@types/three": "^0.169.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.1",
+    "lottie-react": "^2.4.0",
     "next": "14.2.14",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.5.3"
+    "react-scroll": "^1.9.0",
+    "sharp": "^0.33.5",
+    "tailwind-merge": "^2.5.3",
+    "three": "^0.169.0"
   },
   "devDependencies": {
     "@types/node": "^20",

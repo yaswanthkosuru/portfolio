@@ -1,5 +1,4 @@
 import { BackgroundBoxesDemo } from "@components/Hero";
-import { BoxesCore } from "@components/ui/background-boxes";
 const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -8,22 +7,25 @@ const navItems = [
 ];
 import { FloatingNav } from "@components/ui/floatingNavbar";
 import { Spotlight } from "@components/ui/spotLight";
+import { useEffect, useState } from "react";
+import Projects from "@components/ui/projects";
+import { TimelineDemo } from "@components/experience";
 export default function Home() {
   return (
-    <div className="bg-background relative">
-      <div className="w-1/2">
-        <Spotlight
-          className="-top-40 left-0 md:left-60 md:-top-20 absolute"
-          fill="lightGray"
-        />
-      </div>
+    <div className="bg-background relative text-white">
+      <div className="w-1/2"></div>
       <div className="">
         <BackgroundBoxesDemo />
       </div>
-      <div className="border-black">
-        <FloatingNav navItems={navItems} />
+      <div className="mx-2 md:mx-20">
+        <div className="border-black">
+          <FloatingNav navItems={navItems} />
+        </div>
+        <section id="about">
+          <TimelineDemo />
+        </section>
+        <Projects />
       </div>
-      hello yaswanth
     </div>
   );
 }
