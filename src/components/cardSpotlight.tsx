@@ -1,24 +1,27 @@
 import { CardSpotlight } from "@components/ui/cardSpotlight";
 
-export function CardSpotlightDemo() {
+export function CardSpotlightDemo({ project }) {
   return (
-    <CardSpotlight className="h-96 w-96">
+    <CardSpotlight className="h-auto w-96">
       <p className="text-xl font-bold relative z-20 mt-2 text-white">
-        Authentication steps
+        {project.title}
       </p>
       <div className="text-neutral-200 mt-4 relative z-20">
         Follow these steps to secure your account:
         <ul className="list-none  mt-2">
-          <Step title="Enter your email address" />
+          {project.points.map((step, index) => (
+            <Step key={index} title={step} />
+          ))}
+          {/* <Step title="Enter your email address" />
           <Step title="Create a strong password" />
           <Step title="Set up two-factor authentication" />
-          <Step title="Verify your identity" />
+          <Step title="Verify your identity" /> */}
         </ul>
       </div>
-      <p className="text-neutral-300 mt-4 relative z-20 text-sm">
+      {/* <p className="text-neutral-300 mt-4 relative z-20 text-sm">
         Ensuring your account is properly secured helps protect your personal
         information and data.
-      </p>
+      </p> */}
     </CardSpotlight>
   );
 }

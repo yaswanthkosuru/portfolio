@@ -2,7 +2,7 @@ import { BackgroundBoxesDemo } from "@components/Hero";
 const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "skills", link: "#skills" },
   { name: "Contact", link: "#contact" },
 ];
 import { FloatingNav } from "@components/ui/floatingNavbar";
@@ -10,6 +10,8 @@ import { Spotlight } from "@components/ui/spotLight";
 import { useEffect, useState } from "react";
 import Projects from "@components/ui/projects";
 import { TimelineDemo } from "@components/experience";
+import ContactForm from "@components/contactForm";
+import Skills from "@components/Skills";
 export default function Home() {
   return (
     <div className="bg-background relative text-white">
@@ -24,7 +26,15 @@ export default function Home() {
         <section id="about">
           <TimelineDemo />
         </section>
-        <Projects />
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="contact">
+          <ContactForm />
+        </section>
       </div>
     </div>
   );
