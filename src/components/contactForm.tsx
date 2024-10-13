@@ -56,7 +56,6 @@ const ContactForm = () => {
                 <textarea
                   className="w-full p-3 bg-gray-700 rounded-lg border border-gray-600 focus:outline-none focus:border-indigo-500"
                   id="message"
-                  rows="4"
                   placeholder="Your Message"
                   required
                 ></textarea>
